@@ -1,7 +1,7 @@
 # 📚 Book Scraper (Books to Scrape)
 
 A Python web‑scraping project that extracts book data from **Books to Scrape** and saves it into an Excel file.  
-The scraper supports configurable settings through `config.json`, optional image URL extraction, and basic error handling.
+The scraper supports configurable settings through `config.json`, optional image downloading, logging, and robust error handling.
 
 ---
 
@@ -13,11 +13,13 @@ The scraper supports configurable settings through `config.json`, optional image
   - Stock availability  
   - Rating  
   - Image URL (optional)
-  - Download Images (optional)
+  - Downloads book cover images (optional)
 - Saves results to an Excel file (`.xlsx`)
 - Configurable settings via `config.json`
-- Graceful error handling for network issues
+- Logging system with timestamps
+- Organized image output folder
 - Clean, modular code structure
+- Graceful error handling for network issues
 
 ---
 
@@ -26,16 +28,17 @@ The scraper supports configurable settings through `config.json`, optional image
 project/
 │── scraper.py
 │── config.json
-│── Book Data.xlsx   (output)
-│── logs.txt   (output)
-│── Images/   (output)
+│── Book Data.xlsx       (output)
+│── logs.txt             (output)
+│── Images/              (output)
 │── README.md
+
 
 ---
 
 ## ⚙️ Configuration (`config.json`)
 
-The scraper reads settings from `config.json`:
+The scraper reads all settings from `config.json`:
 
 ```json
 {
@@ -46,18 +49,4 @@ The scraper reads settings from `config.json`:
     "log_file_name": "logs.txt",
     "download_images": true,
     "images_folder": "Images"
-}```
-
----
-
-## 🥇 Requirements (Running Script)
-
-Run the following command to download the requirements for the script.
-
-"pip install -r requirements.txt"
-
-And finally, to run the python script do the following
-
-"python main.py"
-
-If your still stuck, you may need to install python to run the script
+}
