@@ -46,7 +46,7 @@ The scraper reads settings from `config.json`:
     "log_file_name": "logs.txt",
     "download_images": true,
     "images_folder": "Images"
-}
+}```
 
 ---
 
