@@ -1,0 +1,9 @@
+{
+    "excel_output_name": "Book Data.xlsx",
+    "pages_to_scrape": 5,
+    "save_images": true,
+    "logs_enabled": true,
+    "log_file_name": "logs.txt",
+    "download_images": true,
+    "images_folder": "Images"
+}
